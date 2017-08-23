@@ -1,0 +1,12 @@
+.MenuComponent {
+	display: flex;
+	/*flex-flow: row wrap;*/
+	flex-wrap: wrap;
+	width: 700px;
+}
+
+@media (max-width: 400px) {
+	.MenuComponent {
+		width: 350px;
+	}
+}
