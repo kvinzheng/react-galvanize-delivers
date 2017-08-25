@@ -28,7 +28,7 @@ export default function OrderTableComponent({ items }) {
 											{item.quantity}
 										</td>
 										<td>
-											{item.quantity * item.price}
+											{`$${item.quantity * item.price}`}
 										</td>
 									</tr>
 								: <tr key={item.id} />
@@ -42,19 +42,19 @@ export default function OrderTableComponent({ items }) {
 					<tr>
 						<td>Subtotal</td>
 						<td>
-							{subtotal.toFixed(2)}
+							{`$${subtotal.toFixed(2)}`}
 						</td>
 					</tr>
 					<tr>
 						<td>Tax</td>
 						<td>
-							{tax.toFixed(2)}
+							{`$${tax.toFixed(2)}`}
 						</td>
 					</tr>
 					<tr>
 						<td>Total</td>
 						<td>
-							{(subtotal + tax).toFixed(2)}
+							{`$${(subtotal + tax).toFixed(2)}`}
 						</td>
 					</tr>
 				</tbody>
