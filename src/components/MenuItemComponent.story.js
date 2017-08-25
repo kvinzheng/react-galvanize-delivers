@@ -6,7 +6,15 @@ import './MenuItemComponent.story.css';
 storiesOf('MenuItemComponent', module)
 	.add('Happy Path', () =>
 		<MenuItemComponent
-			item={{ name: 'Some Item A', price: 9.99, imagePath: '//via.placeholder.com/300x200' }}
+			item={{
+				name: 'Some Item A',
+				price: 9.99,
+				imagePath: '//via.placeholder.com/300x200',
+				id: '1'
+			}}
+			onClick={itemId => {
+				console.log(itemId);
+			}}
 		/>
 	)
 	.add('Incomplete Data', () =>

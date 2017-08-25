@@ -1,6 +1,11 @@
 import React from 'react';
 
-export default function MenuItemComponent({ item }) {
+export default function MenuItemComponent({ item, onClick }) {
+	function handleClick(event) {
+		event.preventDefault();
+		onClick(item.id);
+	}
+
 	if (!item) return null;
 	return (
 		<div className="card MenuItemComponent">
@@ -16,7 +21,9 @@ export default function MenuItemComponent({ item }) {
 				</p>
 			</div>
 			<div className="card-action">
-				<a href="#">ADD TO ORDER</a>
+				<a href="#" onClick={handleClick}>
+					ADD TO ORDER
+				</a>
 			</div>
 		</div>
 	);

@@ -17,18 +17,21 @@ export default function OrderTableComponent({ items }) {
 					</tr>
 				</thead>
 				<tbody id="order">
-					{items.map(item =>
-						<tr key={item.productId}>
-							<td>
-								{item.name}
-							</td>
-							<td>
-								{item.quantity}
-							</td>
-							<td>
-								{item.quantity * item.price}
-							</td>
-						</tr>
+					{items.map(
+						item =>
+							item.quantity
+								? <tr key={item.id}>
+										<td>
+											{item.name}
+										</td>
+										<td>
+											{item.quantity}
+										</td>
+										<td>
+											{item.quantity * item.price}
+										</td>
+									</tr>
+								: <tr key={item.id} />
 					)}
 				</tbody>
 			</table>

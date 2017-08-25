@@ -4,16 +4,12 @@ import OrderTableComponent from './OrderTableComponent';
 import MenuComponent from './MenuComponent';
 import OrderFormComponent from './OrderFormComponent';
 import OrderPageLayout from './OrderPageLayout';
-import NavHeaderComponent from './NavHeaderComponent';
-import FooterComponent from './FooterComponent';
-import data from '../data/data.JSON';
+import data from '../data/data';
 
 storiesOf('OrderPageLayout', module).add('Happy Path', () =>
 	<OrderPageLayout>
-		<NavHeaderComponent />
 		<MenuComponent items={data.menuItems} />
 		<OrderTableComponent items={data.orderItems} />
 		<OrderFormComponent defaultCustomerInfo={data.customerInfo} />
-		<FooterComponent />
 	</OrderPageLayout>
 );

@@ -2,8 +2,15 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import MenuComponent from './MenuComponent';
 import './MenuComponent.story.css';
-import data from '../data/data.JSON';
+import data from '../data/data';
 
 let menuItems = data.menuItems;
 
-storiesOf('MenuComponent', module).add('Happy Path', () => <MenuComponent items={menuItems} />);
+storiesOf('MenuComponent', module).add('Happy Path', () =>
+	<MenuComponent
+		items={menuItems}
+		onAddItem={itemId => {
+			console.log(itemId);
+		}}
+	/>
+);

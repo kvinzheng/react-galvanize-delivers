@@ -4,13 +4,21 @@ import './index.css';
 import OrderPage from './components/OrderPage';
 import data from './data/data';
 
-console.log(data);
+function handleAddItem(itemId) {
+	data.menuItems.forEach(item => (item.id === itemId ? item.quantity++ : false));
+	render();
+}
 
-ReactDOM.render(
-	<OrderPage
-		menuItems={data.menuItems}
-		orderItems={data.orderItems}
-		customerInfo={data.customerInfo}
-	/>,
-	document.getElementById('root')
-);
+function render() {
+	ReactDOM.render(
+		<OrderPage
+			menuItems={data.menuItems}
+			orderItems={data.menuItems}
+			customerInfo={data.customerInfo}
+			onAddItem={handleAddItem}
+		/>,
+		document.getElementById('root')
+	);
+}
+
+render();
