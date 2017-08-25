@@ -23,6 +23,12 @@
 			"price": 7.99,
 			"imagePath": "/img/ice_cream.jpg",
 			"id": 4
+		},
+		{
+			"name": "New Classmates",
+			"price": 999.99,
+			"imagePath": "/img/chuck.jpg",
+			"id": "chuck"
 		}
 	],
 	"customerInfo": {

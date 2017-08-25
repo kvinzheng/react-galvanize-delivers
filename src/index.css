@@ -8,6 +8,17 @@
 	box-sizing: border-box;
 }
 
+.card-image {
+	height: 200px;
+	overflow: hidden;
+}
+
+#chuck {
+	margin-top: -250px;
+	position: absolute;
+	top: 50%;
+}
+
 .MenuItemComponent {
 	margin: 20px;
 	width: 300px;

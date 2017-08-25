@@ -10,7 +10,11 @@ export default function MenuItemComponent({ item, onClick }) {
 	return (
 		<div className="card MenuItemComponent">
 			<div className="card-image">
-				<img src={item.imagePath || '//via.placeholder.com/300x200'} alt={item.name} />
+				<img
+					src={item.imagePath || '//via.placeholder.com/300x200'}
+					alt={item.name}
+					id={`${item.id}`}
+				/>
 			</div>
 			<div className="card-content">
 				<h5 className="card-title">
