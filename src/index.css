@@ -4,6 +4,8 @@
 .OrderPageLayout {
 	display: flex;
 	padding: 50px;
+	flex-wrap: wrap;
+	box-sizing: border-box;
 }
 
 .MenuItemComponent {
@@ -19,21 +21,22 @@
 }
 
 @media (max-width: 400px) {
+	.MenuComponent {
+		width: 350px;
+	}
 	.leftColumn {
 		width: 350px;
 	}
 	.rightColumn {
-		width: 350px;
+		width: 300px;
+		margin: 10px 0;
+	}
+	.brand-logo {
+		font-size: 10px;
 	}
 }
 
-.OrderTableComponent {
-	width: 600px;
-	align-items: center;
-}
-
 .OrderFormComponent {
-	width: 100%;
 	margin-top: 60px;
 }
 
@@ -41,9 +44,11 @@
 	width: 50%;
 	margin: 10px;
 	margin-right: 20px;
+	box-sizing: border-box;
 }
 
 .rightColumn {
 	margin: 10px 150px;
-	width: 50%;
+	width: 300px;
+	box-sizing: border-box;
 }
