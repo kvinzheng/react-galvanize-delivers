@@ -3,7 +3,8 @@
 
 .OrderPageLayout {
 	display: flex;
-	padding: 10px;
+	padding: 40px;
+	vertical-align: middle;
 }
 
 .MenuItemComponent {
@@ -16,6 +17,7 @@
 	/*flex-flow: row wrap;*/
 	flex-wrap: wrap;
 	width: 700px;
+	box-sizing: border-box;
 }
 
 @media (max-width: 400px) {
@@ -26,6 +28,10 @@
 
 .OrderTableComponent {
 	width: 500px;
+}
+
+.OrderFormComponent {
+	width: 400px;
 }
 
 .leftColumn {

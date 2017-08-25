@@ -3,28 +3,28 @@
 		{
 			"name": "Archer's Burger",
 			"price": 8.99,
-			"imagePath": "//via.placeholder.com/300x200",
+			"imagePath": "/img/burger.jpg",
 			"id": 1,
 			"quantity": 0
 		},
 		{
 			"name": "The 3.14",
 			"price": 11.99,
-			"imagePath": "//via.placeholder.com/300x200",
+			"imagePath": "/img/pizza.jpg",
 			"id": 2,
 			"quantity": 0
 		},
 		{
 			"name": "Babe",
 			"price": 14.99,
-			"imagePath": "//via.placeholder.com/300x200",
+			"imagePath": "/img/ribs.jpg",
 			"id": 3,
 			"quantity": 0
 		},
 		{
 			"name": "I Scream",
 			"price": 7.99,
-			"imagePath": "//via.placeholder.com/300x200",
+			"imagePath": "/img/ice_cream.jpg",
 			"id": 4,
 			"quantity": 0
 		}
