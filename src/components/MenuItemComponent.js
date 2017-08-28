@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function MenuItemComponent({ item, onClick }) {
+export default function MenuItemComponent({ item, onAddItem }) {
 	function handleClick(event) {
 		event.preventDefault();
-		onClick(item.id);
+		onAddItem(item.id);
 	}
 
 	if (!item) return null;
